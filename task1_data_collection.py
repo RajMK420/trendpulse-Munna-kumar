@@ -4,7 +4,6 @@ import time
 from datetime import datetime
 import os
 
-# Module-level constant — never mutated, so UPPER_SNAKE_CASE
 CATEGORIES = {
     "technology":   ["ai", "software", "tech", "code", "computer", "data", "cloud", "api", "gpu", "llm"],
     "worldnews":    ["war", "government", "country", "president", "election", "climate", "attack", "global"],
@@ -13,7 +12,6 @@ CATEGORIES = {
     "entertainment":["movie", "film", "music", "netflix", "game", "book", "show", "award", "streaming"],
 }
 
-# Shared session — reuses TCP connections across all requests
 SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": "TrendPulse/1.0"})
 
